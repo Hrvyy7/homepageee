@@ -32,6 +32,10 @@ function App() {
     window.open('https://nan-placement.vercel.app/', '_blank');
   };
 
+  const handleDSAClick = () => {
+    window.open('https://nano-nanda.netlify.app/', '_blank');
+  };
+
   return (
     <div className="app-container">
       <div className="clock-container">
@@ -40,7 +44,7 @@ function App() {
       <h1 className="title">Welcome to Placement Training</h1>
       <div className="button-container">
         <button className="btn" onClick={handleGrammarClick}>Grammar</button>
-        <button className="btn">DSA</button>
+        <button className="btn" onClick={handleDSAClick}>DSA</button>
         <button className="btn" onClick={handleCodingRoundClick}>Coding Round</button>
       </div>
       <button className="btn chatbot" onClick={handleChatbotClick}>Chatbot</button>
